@@ -4,9 +4,9 @@ I captured packets with Wireshark and operated on the
 that met filter criteria.
 
 For example, the command:
-
+```
 tshark -Y "quic && ip.dst==192.168.1.120" -r chrome_wlan_Cumberland.pcapng -o "gui.column.format:\"Time\",\"%t\"" > DstTime.txt
-
+```
 will filter the Google QUIC packets travelling in a single direction
 from an existing .pcapng file, and produce a text file with the 
 "time since capture started" as configured in Wireshark (View -> Time Display Format).
@@ -56,9 +56,9 @@ Next, we submit vecxtors x and times to the Periodogram calculation
 ```
 The calculated peak period seems to be at ~602ms, but the peak power
 fails to exceed the false alarm threshold, as shown in the plot that
-the lsp() function optionally produces.
+the lsp() function optionally produces:
 
-<add link to .pdf file>
+https://github.com/acmacm/PassiveRTT/blob/master/chrome_wlan_dst_quic_500_alpha10_Cumberland.pdf
 
 Since the ~600ms RTT seemed on the long side, I pinged the server that 
 was sourcing the QUIC stream, and ICMP RTT was quite a bit lower:
@@ -81,7 +81,7 @@ didn't produce great results immediately, because there are many
 alternative analysis angles to try, and if this was easy,
 they wouldn't pay us the big bucks...
 
-I'm inclined to look at other parts of the capture. The stream was 
+I'm inclined to look at other segments of the capture. The stream was 
 from YouTube: https://www.youtube.com/watch?v=tZaeKwgS7wg   
 (audio of Jason Isbell's song "Cumberland Gap"), and received
 on my chrome browser Version 60.0.3112.78 . 

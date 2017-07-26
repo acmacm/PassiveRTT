@@ -12,5 +12,5 @@ http://www-sop.inria.fr/members/Philippe.Nain/PAPERS/PASSIVE-ONLINE-ESTIMATION/P
 provides a method to estimate RTT from passive observations of a 
 single direction of a flow's transmission.  The methods operate on
 "the signal is the packet inter-arrival time of the flow at hand."
-and compute the Lomb-Sparkle Periodogram on a sliding window of 
+and compute the Lomb-Scargle Periodogram on a sliding window of 
 the packet flow, stepping by one as new flows arrive.

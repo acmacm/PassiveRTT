@@ -3,9 +3,10 @@ Description of one tool chain to evaluate Passive Round-Trip-Time measurement
 
 The paper:
 Passive Online RTT Estimation
-for Flow-Aware Routers Using One-Way Traffic
-Damiano Carra1,, Konstantin Avrachenkov2, Sara Alouf2,
-Alberto Blanc2, Philippe Nain2, and Georg Post3
+for Flow-Aware Routers Using One-Way Traffic
+Damiano Carra, Konstantin Avrachenkov, Sara Alouf,
+Alberto Blanc, Philippe Nain, and Georg Post
+
 http://www-sop.inria.fr/members/Philippe.Nain/PAPERS/PASSIVE-ONLINE-ESTIMATION/Passive-online-RTT-estimation.pdf
 
 provides a method to estimate RTT from passive observations of a 

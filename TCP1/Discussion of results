@@ -3,7 +3,7 @@ applied the tools to a classic FTP/TCP file transfer.
 
 The Wireshark version of the RTT plot shows mostly 
 RTTs less than 30ms:
-
+https://github.com/acmacm/PassiveRTT/blob/master/TCP1/TCP1_WS_RTT.pdf
 
 ```
 tshark -Y "ftp-data && ip.dst == 10.255.255.2" -r m2-255-139_Eth_July03-PC-Bband.pcap -o "gui.column.format:\"Time\",\"%t\"" > DstTimeTCP1.txt

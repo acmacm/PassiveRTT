@@ -19,13 +19,22 @@ Read 686 items
 > lombData$p.value
 [1] 0.3842117
 ```
+https://github.com/acmacm/PassiveRTT/blob/master/TCP1/TCP1_LP_freq.pdf
+The peak at ~10 ms could be legitimate, but the p value and 
+confidence are low.
 
+Changing the frequency range didn't help, in fact, this range excluded the former peak:
 ```
 > lombData = lsp(x, times = times, from = 500, to = 1000, type = "frequency", alpha = 0.1, plot = TRUE)
 > lombData$peak.at
 [1] 8.999913e+02 1.111122e-03
 > lombData$p.value
 [1] 0.8147793
+```
+https://github.com/acmacm/PassiveRTT/blob/master/TCP1/TCP1_LP_freq_500-1000.pdf
+
+Next, I tried a smaller number of packet interarrival times, just 200:
+```
 > times = scan(file = "DstTimeTCP1_200.txt")
 Read 200 items
 > n = length(times)
@@ -38,3 +47,7 @@ Read 200 items
 [1] 1
 > 
 ```
+https://github.com/acmacm/PassiveRTT/blob/master/TCP1/TCP1_200_LP_freq.pdf
+
+The result is no better than chance, according to the p-value.
+

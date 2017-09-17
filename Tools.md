@@ -42,7 +42,7 @@ Read 500 items
 [497] 0.000001 0.000903 0.000001 0.001008
 ```
 
-Next, we submit vecxtors x and times to the Periodogram calculation
+Next, we submit vectors x and times to the Periodogram calculation
 (which can use other parameters, such as the frequency range, false alarm alpha, etc.):
 
 ```

@@ -4,7 +4,7 @@ I found a fairly simple Lab trace with a short transfer in one direction.
 The TCP transfer only contains 45 packets after tshark filtering.
 
 Wireshark indicates RTTs between 3ms and 6ms
-
+```
 TCP2
 tshark -Y "tcp && ip.dst == 198.228.201.150" -r HTTP_test_apache2.snoop -o "gui.column.format:\"Time\",\"%t\"" > DstTimeTCP2.txt
 
@@ -19,3 +19,4 @@ Read 45 items
 > lombData$p.value
 [1] 0.941433
 > 
+```

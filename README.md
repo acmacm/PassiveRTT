@@ -18,4 +18,4 @@ the inter-arrival times of the flow, stepping by one as new flows arrive.
 Tools.md contains an example of putting the various tools to work
 on a Google QUIC stream.
 
-Other results will be added as they become available.
+Other results will be added as they become available, focusing on TCP since this was the original focus of passive measurements.

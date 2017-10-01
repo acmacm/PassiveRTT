@@ -3,6 +3,7 @@
 After seeing a good and simple TCP stream fail to produce a viable estimate of RTT, 
 I prepared a set of times and timestamps that simulate a Preiodic Stream, 
 and submitted the timestamps to the Lomb-Scargle analysis.
+
 The time stamps were all 0.01 seconds apart, so we should see 
 100 Hz frequency prominantly represented in the results.
 
@@ -20,6 +21,11 @@ Read 45 items
 ```
 The Periodogram
 
-
+https://github.com/acmacm/PassiveRTT/blob/master/PeriodicTest/Periiodic0.01_LS_LPa0.1.pdf
 
 indicates that the periodicity was observed, but the value at 100 Hz is a prominant minimum.
+There are many related frequency components, and this would be expected from the impulse train.
+
+None of the power levels are close to the alpha = 0.1 threshold, 
+but the p value = 1 indicates that this result could not have occured by chance,
+which is correct.

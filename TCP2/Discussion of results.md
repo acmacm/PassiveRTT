@@ -3,9 +3,11 @@
 I located a fairly simple Lab trace with a short transfer in one direction.
 The TCP transfer only contains 45 packets after tshark filtering.
 The Stevens plot of Sequence number vs time:
+
 https://github.com/acmacm/PassiveRTT/blob/master/TCP2/HTTP_test_apache2_Stevens.pdf
 
 Wireshark indicates RTTs between 3ms and 6ms, with many less than 4 ms:
+
 https://github.com/acmacm/PassiveRTT/blob/master/TCP2/HTTP_test_apache2_RTT.pdf
 
 
@@ -27,6 +29,8 @@ Read 45 items
 ```
 The peak at ~586 Hz corresponds to 1.7 ms, about half the measured RTT.
 The p value is quite high (0.94) but the confidence is below the alpha threshold:
+
 https://github.com/acmacm/PassiveRTT/blob/master/TCP2/TCP2_LP_freq1000_a0.1.pdf
+
 https://github.com/acmacm/PassiveRTT/blob/master/TCP2/TCP2_LP_freq1000_a0.1.jpeg
 

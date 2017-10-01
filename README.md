@@ -15,7 +15,7 @@ single direction of a flow's transmission.  The methods use
 and compute the Lomb-Scargle Periodogram on a sliding window of 
 the inter-arrival times of the flow, stepping by one as new packets arrive.
 
-Tools.md contains an example of putting the various tools to work
+**Tools.md** contains an example of putting the various tools to work
 on a Google QUIC stream.
 
 Other results will be added as they become available, focusing on TCP since this was the original focus of passive measurements.

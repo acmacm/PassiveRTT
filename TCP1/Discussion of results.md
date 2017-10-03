@@ -63,7 +63,7 @@ f_max = 687/2 * f_min =  26.144
       (10 to 20 ms, 100 to 50 Hz), but there are a significant 
       number of RTTs that are 30ms or higher, meaning <= 33 Hz, close...
 
-But, if we look at the first 256 packets (as in the Carras paper)
+But, if we look at the first 256 packets (as in the Carra paper)
 Time in the capture = 5.908809 Seconds
 f_min = 1/time = 0.1692 Hz
 f_max = 256/2 * f_min = 21 Hz

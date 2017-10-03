@@ -36,3 +36,8 @@ https://github.com/acmacm/PassiveRTT/blob/master/TCP2/TCP2_LP_freq1000_a0.1.pdf
 
 https://github.com/acmacm/PassiveRTT/blob/master/TCP2/TCP2_LP_freq1000_a0.1.jpeg
 
+
+But, there's a different problem with this trace: There really aren't enough packets to detect the 
+fundamental frequency, f ~ 285 Hz, let alone a multiple of the fundamental (2f = 571).
+
+(see the f_min and f_max analysis).

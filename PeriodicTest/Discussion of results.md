@@ -54,7 +54,8 @@ Read 401 items
  [1] 0.00 0.01 0.01 0.01 0.01 0.02 0.02 0.02 0.02 0.03 0.03 0.03 0.03 0.04 0.04
 [16] 0.04 0.04 0.05 0.05 0.05 0.05 0.06 0.06 0.06 0.06 0.07 0.07 0.07 0.07 0.08
 > 
+```
+https://github.com/acmacm/PassiveRTT/blob/master/PeriodicTest/Periiodic0.01_400pps_LS_LPa0.1.pdf
 
 Trying reduced alpha =0.50
-Didn't help, L-S is still a flat line...
-```
+   Didn't help, L-S is still a flat line...

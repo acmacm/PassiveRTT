@@ -52,3 +52,20 @@ Read 200 items
 https://github.com/acmacm/PassiveRTT/blob/master/TCP1/TCP1_200_LP_freq.pdf
 
 The result is no better than chance, according to the p-value.
+
+The requirements to detect frequencies correposnding to the measured RTTs are not quite met here:
+```
+The TCP1 filtered pcap file contains 687 packets
+Total time of the filtered capture = 13.139016 Seconds  (~52 pkt/sec)
+f_min = 1/time = 0.076 Hz
+f_max = 687/2 * f_min =  26.144
+==>>> These values don't match the Measured RTT 
+      (10 to 20 ms, 100 to 50 Hz)
+
+But, if we look at the first 256 packets (as in the Carras paper)
+Time in the capture = 5.908809 Seconds
+f_min = 1/time = 0.1692 Hz
+f_max = 256/2 * f_min = 21 Hz
+So, we still don't have sufficient frequency range to detect 100 Hz,
+(or any multiples of the 100Hz fundamental freq.)
+```

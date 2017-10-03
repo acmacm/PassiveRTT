@@ -27,8 +27,10 @@ Read 45 items
 [1] 0.941433
 > 
 ```
-The peak at ~586 Hz corresponds to 1.7 ms, about half the measured RTT.
-The p value is quite high (0.94) but the confidence is below the alpha threshold:
+The peak at ~586 Hz corresponds to 1.7 ms, about half the measured RTT. So, this is related to the 
+approximate and known fundamental frequency and RTTs between 3 and 4 ms.
+
+The p value is quite high (prob = 0.94 that result occured by chance) and the confidence is below the alpha threshold:
 
 https://github.com/acmacm/PassiveRTT/blob/master/TCP2/TCP2_LP_freq1000_a0.1.pdf
 

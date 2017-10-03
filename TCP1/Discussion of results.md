@@ -59,8 +59,9 @@ The TCP1 filtered pcap file contains 687 packets
 Total time of the filtered capture = 13.139016 Seconds  (~52 pkt/sec)
 f_min = 1/time = 0.076 Hz
 f_max = 687/2 * f_min =  26.144
-==>>> These values don't match the Measured RTT 
-      (10 to 20 ms, 100 to 50 Hz)
+==>>> These values don't match most of the Measured RTT 
+      (10 to 20 ms, 100 to 50 Hz), but there are a significant 
+      number of RTTs that are 30ms or higher, meaning <= 33 Hz, close...
 
 But, if we look at the first 256 packets (as in the Carras paper)
 Time in the capture = 5.908809 Seconds

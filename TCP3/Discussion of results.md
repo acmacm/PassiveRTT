@@ -15,8 +15,8 @@ https://github.com/acmacm/PassiveRTT/blob/master/TCP3/StreamFlashHD_Stevens.pdf
 
 At this point, I've begun to use a source script to automate the R processing, 
 anticipating that this will be useful when the need to perform window processing
-and analysis on a list of peak frequencies which could represent the fundamental freq.
-that stems from the RTT.
+and analysis (on a list of peak frequencies which could represent the fundamental freq.
+considerable averaging to obtain the RTT.
 
 ```
 > source(file = "LSP_script.txt")

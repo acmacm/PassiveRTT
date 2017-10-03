@@ -37,11 +37,25 @@ maybe 4 x 16.666 Hz, or approx one fourth of 60 ms or a multiple of one of the v
 
 At least the p-value is only leaning toward a chance outcome.
 
+Flier: reduce the LP filter BW:
+```
+lombData = lsp(x, times = times, from = 1, to = 100, type = "frequency", alpha = 0.1, plot = TRUE)
+> lombData$peak.at
+[1] 64.00682700  0.01562333
+> lombData$p.value
+[1] 0.09384119
+> 
+```
+The power at ~64 Hz now *crosses* the alpha threshold (first time this has happened),
+and p-value is the lowest seen so far (furthest away from chance).
+
+https://github.com/acmacm/PassiveRTT/blob/master/TCP3/TCP3_LP_freq100__a0.1.pdf
+
 Frequency range calculation for TCP3:
 ```
 contains 4818 packets
 Total time of the capture = 54 Seconds  (~ 89.222 pkt/sec)
 f_min = 1/time = 0.0185 Hz
-f_max = 4818/2 * f_min =  44.6111
+f_max = 4818/2 * f_min =  44.6111 Hz
 
 ```

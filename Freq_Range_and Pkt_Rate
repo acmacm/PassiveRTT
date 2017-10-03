@@ -1,6 +1,6 @@
 ## The Range of Detected Frequencies is Constrained by the Packet Rate
 
-The Cary paper gives limits on detectable frequencies: 
+The Cara paper gives limits on detectable frequencies: 
 
 ```
 f_min = 1/time (time interval for N packets)

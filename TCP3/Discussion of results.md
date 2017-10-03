@@ -36,3 +36,12 @@ but this peak at 64 Hz or 15.6 ms is not easliy related to the measured RTTs,
 maybe 4 x 16.666 Hz, or approx one fourth of 60 ms or a multiple of one of the very small RTTs (< 5 ms).
 
 At least the p-value is only leaning toward a chance outcome.
+
+Frequency range calculation for TCP3:
+```
+contains 4818 packets
+Total time of the capture = 54 Seconds  (~ 89.222 pkt/sec)
+f_min = 1/time = 0.0185 Hz
+f_max = 4818/2 * f_min =  44.6111
+
+```

@@ -20,7 +20,7 @@ on a Google QUIC stream. This is a partial tool-chain at present:
 the sliding window and processing of the list of peak frequencies is not yet implemented.
 
 Other results will be added as they become available, focusing on TCP since this was the original focus of passive measurements.
-Analysis of each stream has been placed in a sub-directory (e.g., TCP1 is the 
+Analysis of each stream has been placed in a sub-directory (e.g., TCP1 is the first attempt with a TCP stream).
 
 **Latest Update:** Tried several Synthesised Periodic Streams with periodic sampling and analyzed with Lomb-Scargle.
 (Since Lomb-Scargle works with non-periodic sampling, analysis of an ideal stream should be a easier?)

@@ -32,6 +32,8 @@ At least the periodogram is less noisy.
 
 This analysis suffers from too few packets and insufficient packet rate.
 
+## Trying 400 pps in 4 packet bursts
+
 Trying to match the requirements from f_min and f_max, 400pps stream,
 by creating a stream with bursts of 4 packets every 10 ms:
 

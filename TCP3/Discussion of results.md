@@ -3,7 +3,7 @@ Chose single direction for analysis and processed with tshark:
 ```
 tshark -Y "tcp && ip.dst == 156.106.205.1" -r StreamFlashHDCapture.pcap -o "gui.column.format:\"Time\",\"%t\"" > DstTimeTCP3.txt
 ```
-The Wireshark TCP analysis indicates many RTT ~60ms, but also many very low RTT (<5ms). 
+The Wireshark TCP analysis indicates many RTT ~60ms (16.666 Hz) but also many very low RTT (<5ms). 
 
 https://github.com/acmacm/PassiveRTT/blob/master/TCP3/StreamFlashHD_RTT.pdf
 
@@ -33,6 +33,6 @@ The Lomb-Scargle Periodogram indicates a single strong peak frequency:
 https://github.com/acmacm/PassiveRTT/blob/master/TCP3/TCP3_LP_freq1000_a0.1.pdf
 
 but this peak at 64 Hz or 15.6 ms is not easliy related to the measured RTTs,
-maybe one fourth of 60 ms, or a multiple of one of the very small RTTs (< 5 ms).
+maybe 4 x 16.666 Hz, or approx one fourth of 60 ms or a multiple of one of the very small RTTs (< 5 ms).
 
 At least the p-value is only leaning toward a chance outcome.

@@ -26,5 +26,5 @@ Also tried several Synthesised Periodic Streams with **Periodic** sampling and a
 
 **Latest Update:** An old pcap of a Flash HD stream produced a very strong peak
 in the L-S Periodogram; this is the first case where a frequency component was
-non-random/did not occur by chance.
+non-random/did not occur by chance. See the **TCP3** Directory.
 

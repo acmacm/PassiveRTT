@@ -1,4 +1,4 @@
-## The Range of Detected Frequencies is Constrained by the Packet Rate
+## The Range of Detectable Frequencies is Constrained by the Packet Rate
 
 The Carra paper gives limits on detectable frequencies: 
 
@@ -18,3 +18,14 @@ then     N / time = 600  or 600 packets per second (at least)
 This implies a Throughput of 6.950 Mbit/sec (1448 MSS)
 
 ```
+For the set of impulse periods, T, that we are evaluating, I'm beginning to 
+wonder if the Nyquist sample limit applied here (N/2) is applicable.
+The sample times and the interarrival times (signal to detect) are directly related,
+and this is not the case for many applications of Lomb-Scargle.
+
+The limits as formulated above are a tight restriction on applicable
+streams, especially when considering that Carra et al. indicate that
+a multiple of the fundamental frequency is expected to have peak power
+(and the fundamental is only determined after evaluating lists of 
+candidates). In the TCP3 analysis, the detected peak frequency ~ 4 times the expected
+fundamental frequency (from Wireshark measurements).

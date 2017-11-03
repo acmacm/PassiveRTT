@@ -1,5 +1,5 @@
 # PassiveRTT
-Description of a tool chain to evaluate Unidirectional Passive Round-Trip-Time measurement
+**Description of a tool chain to evaluate Unidirectional Passive RTT measurement**
 
 The paper:
 "Passive Online RTT Estimation

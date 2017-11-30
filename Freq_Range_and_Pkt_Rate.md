@@ -28,4 +28,5 @@ streams, especially when considering that Carra et al. indicate that
 a multiple of the fundamental frequency is expected to have peak power
 (and the fundamental is only determined after evaluating lists of 
 candidates). In the TCP3 analysis, the detected peak frequency was ~ 4 times the expected
-fundamental frequency (from Wireshark RTT measurements).
+fundamental frequency (from Wireshark RTT measurements), but this frequency
+is believed to be dictated by application sending patterns and not the RTT.

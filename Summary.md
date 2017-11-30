@@ -11,7 +11,7 @@ better match between packet rate and relatively low frequencies to detect).
 
 * (so far) None of the TCP streams analysed have a sufficient packet rate
 such that the measured fundamental frequency or the multiples of the fundamental
-are in the detectable range. See https://github.com/acmacm/PassiveRTT/blob/master/Freq_Range_and%20Pkt_Rate.md
+are in the detectable range. See https://github.com/acmacm/PassiveRTT/blob/master/Freq_Range_and_Pkt_Rate.md
 
 * "Ideal" interarrival time streams were simulated with uniform sampling
 and period. The Lomb-Scargle Periodogram is surprisingly unable to detect

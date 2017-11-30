@@ -26,6 +26,7 @@ frequency on the packet spacing.
 
 * The Carra et al. analysis of minimum and maximum frquecies that can be detected 
 may not be applicable when the inter-arrival times are the signal 
-being detected. Pulses with period T should result in a Dirac comb
+being detected, and also govern the non-uniform sampling frequency. 
+Pulses with period T should result in a Dirac comb
 in the frquency domain with spacing 1/T (the fundamental frequency
 and multiples thereof).
